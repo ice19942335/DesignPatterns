@@ -21,16 +21,6 @@ namespace PrototypeInheritance
         public string StreetName;
         public int HouseNumber;
 
-        public Address()
-        {
-        }
-
-        public Address(string streetName, int houseNumber)
-        {
-            StreetName = streetName;
-            HouseNumber = houseNumber;
-        }
-        
         public void CopyTo(Address target)
         {
             target.StreetName = StreetName;
@@ -48,16 +38,6 @@ namespace PrototypeInheritance
         public string[] Names;
         public Address Address;
 
-        public Person()
-        {
-        }
-
-        public Person(string[] names, Address address)
-        {
-            Names = names;
-            Address = address;
-        }
-
         public void CopyTo(Person target)
         {
             target.Names = (string[]) Names.Clone();
@@ -73,17 +53,6 @@ namespace PrototypeInheritance
     public class Employee : Person, IDeepCopyable<Employee>
     {
         public int Salary;
-
-        public Employee()
-        {
-            
-        }
-
-        public Employee(string[] names, Address address, int salary)
-            : base(names, address)
-        {
-            Salary = salary;
-        }
 
         public void CopyTo(Employee target)
         {
@@ -125,9 +94,6 @@ namespace PrototypeInheritance
             };
             john.Salary = 321000;
             var copy = john.DeepCopy();
-
-            var e = john.DeepCopy<Employee>();
-            var p = john.DeepCopy<Person>();
 
             copy.Names[1] = "Smith";
             copy.Address.HouseNumber++;
