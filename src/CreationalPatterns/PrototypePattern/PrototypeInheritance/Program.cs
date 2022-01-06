@@ -95,6 +95,7 @@ namespace PrototypeInheritance
             john.Salary = 321000;
             var copy = john.DeepCopy();
 
+            copy.Names[0] = "Jack";
             copy.Names[1] = "Smith";
             copy.Address.HouseNumber++;
             copy.Salary = 123000;
