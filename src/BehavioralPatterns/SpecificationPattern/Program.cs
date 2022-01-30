@@ -7,11 +7,9 @@ namespace SpecificationPattern
     {
         bool IsSatisfiedBy(Employee employee);
     }
-    
+
     public class Employee
     {
-        public string Id { get; set; }
-
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
@@ -86,25 +84,28 @@ namespace SpecificationPattern
 
     class Program
     {
+        private static readonly Employee[] Employees =
+        {
+            new() {FirstName = "Fidel", LastName = "Jones", Department = "Maths", EmployedYear = 2017},
+            new() {FirstName = "Francis", LastName = "Jenkins", Department = "Software", EmployedYear = 2018},
+            new() {FirstName = "Sam", LastName = "Smith", Department = "Maths", EmployedYear = 2016},
+            new() {FirstName = "Michael", LastName = "Wilson", Department = "Software", EmployedYear = 2017},
+            new() {FirstName = "Alfred", LastName = "Williams", Department = "Sales", EmployedYear = 2016}
+        };
+
         static void Main(string[] args)
         {
-            Employee employee1 = new Employee {LastName = "Jones", FirstName = "Fidel", Department = "Maths", EmployedYear = 2017};
-            Employee employee2 = new Employee {LastName = "Jenkins", FirstName = "Francis", Department = "Software", EmployedYear = 2018};
-            Employee employee3 = new Employee {LastName = "Smith", FirstName = "Sam", Department = "Maths", EmployedYear = 2018};
-            Employee employee4 = new Employee {LastName = "Wilson", FirstName = "Michael", Department = "Software", EmployedYear = 2017};
-            Employee[] employees = {employee1, employee2, employee3, employee4};
-
             Console.WriteLine("Software Department:");
-            List<Employee> softwareEmployees = GetEmployee.GetEmployeeBy(new EmployeeDepartmentSpecification("Software"), employees);
+            List<Employee> softwareEmployees = GetEmployee.GetEmployeeBy(new EmployeeDepartmentSpecification("Software"), Employees);
             foreach (var employee in softwareEmployees)
             {
                 Console.WriteLine($"{employee.FirstName} {employee.LastName}");
             }
 
             Console.WriteLine();
-            
+
             Console.WriteLine("Employees named Fidel:");
-            List<Employee> namedEmployees = GetEmployee.GetEmployeeBy(new EmployeeFirstNameSpecification("Fidel"), employees);
+            List<Employee> namedEmployees = GetEmployee.GetEmployeeBy(new EmployeeFirstNameSpecification("Fidel"), Employees);
             foreach (var employee in namedEmployees)
             {
                 Console.WriteLine($"{employee.FirstName} {employee.LastName}");
@@ -113,7 +114,7 @@ namespace SpecificationPattern
             Console.WriteLine();
 
             Console.WriteLine("Employed in 2017:");
-            List<Employee> employedIn2017 = GetEmployee.GetEmployeeBy(new EmployeeEmployedYearSpecification(2017), employees);
+            List<Employee> employedIn2017 = GetEmployee.GetEmployeeBy(new EmployeeEmployedYearSpecification(2017), Employees);
             foreach (var employee in employedIn2017)
             {
                 Console.WriteLine($"{employee.FirstName} {employee.LastName}");
