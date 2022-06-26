@@ -2,7 +2,7 @@
 using System.Xml.Serialization;
 using static System.Console;
 
-[Serializable] // this is, unfortunately, required when using DeepCopyXml() method
+[Serializable] // this is, unfortunately, required when using BinaryFormatter
 public class Person
 {
     public string Name;
@@ -29,13 +29,11 @@ public static class ExtensionMethods
 
     public static T DeepCopyXml<T>(this T self)
     {
-        using (var ms = new MemoryStream())
-        {
-            XmlSerializer s = new XmlSerializer(typeof(T));
-            s.Serialize(ms, self);
-            ms.Position = 0;
-            return (T) s.Deserialize(ms);
-        }
+        using var ms = new MemoryStream();
+        XmlSerializer s = new XmlSerializer(typeof(T));
+        s.Serialize(ms, self);
+        ms.Position = 0;
+        return (T) s.Deserialize(ms);
     }
 }
 
@@ -48,8 +46,8 @@ class Program
         Person deepCopyBinaryFormatter = person.DeepCopy(); // crashes without [Serializable]
         Person deepCopyXml = person.DeepCopyXml();
 
-        WriteLine($"Original person: {person}");
-        WriteLine($"{nameof(deepCopyBinaryFormatter)}: {deepCopyBinaryFormatter}");
-        WriteLine($"{nameof(deepCopyXml)}: {deepCopyXml}");
+        WriteLine($"Source: {person}");
+        WriteLine($"Copy BinaryFormatter: {deepCopyBinaryFormatter}");
+        WriteLine($"Copy XmlSerializer: {deepCopyXml}");
     }
 }
