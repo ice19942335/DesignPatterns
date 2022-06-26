@@ -85,14 +85,16 @@ namespace PrototypeInheritance
     {
         static void Main(string[] args)
         {
-            var john = new Employee();
-            john.Names = new[] {"John", "Doe"};
-            john.Address = new Address
+            var john = new Employee
             {
-                HouseNumber = 123,
-                StreetName = "London Road"
+                Names = new[] {"John", "Doe"},
+                Address = new Address
+                {
+                    HouseNumber = 123,
+                    StreetName = "London Road"
+                },
+                Salary = 321000
             };
-            john.Salary = 321000;
             var copy = john.DeepCopy();
 
             copy.Names[0] = "Jack";
