@@ -54,6 +54,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeSpecifications", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyThroughSerialization", "src\CreationalPatterns\PrototypePattern\CopyThroughSerialization\CopyThroughSerialization.csproj", "{8A1D15DB-7C09-4C3F-B5E7-B3BBAF51B52F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypeExercise_1", "src\CreationalPatterns\PrototypePattern\PrototypeExercise_1\PrototypeExercise_1.csproj", "{6E8FB801-9B4A-4795-9867-E76F13F04B79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SingletonePattern", "SingletonePattern", "{DD4F11FB-33D9-4E7E-94CE-42064DA67AF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestabilityIssues", "TestabilityIssues", "{C2E9A4CC-9258-4C32-95A4-D81ACBDBB135}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonImplementation", "src\CreationalPatterns\SingletonePattern\TestabilityIssues\SingletonImplementation\SingletonImplementation.csproj", "{84D77432-4CE3-4C8C-837A-F612FD1F0E65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestabilityIssues", "src\CreationalPatterns\SingletonePattern\TestabilityIssues\TestabilityIssues\TestabilityIssues.csproj", "{3565AA5C-1BE8-4322-808B-F469FA2323FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestabilityIssuesTests", "src\CreationalPatterns\SingletonePattern\TestabilityIssues\TestabilityIssuesTests\TestabilityIssuesTests.csproj", "{3FE95197-4CBE-4F0A-90CC-280EDAB9DECD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SingletonInDependencyInjection", "SingletonInDependencyInjection", "{EFABA1E7-E254-480C-A0EE-D8BA2CBEB6DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonInDependencyInjection", "src\CreationalPatterns\SingletonePattern\SingletonInDependencyInjection\SingletonInDependencyInjection\SingletonInDependencyInjection.csproj", "{115DCF87-70E4-4EB5-8403-7C1FA0967B3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonInDependencyInjectionTests", "src\CreationalPatterns\SingletonePattern\SingletonInDependencyInjection\SingletonInDependencyInjectionTests\SingletonInDependencyInjectionTests.csproj", "{DDE5F4EF-3024-49BD-BE86-1CA1EB8FD2C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +104,15 @@ Global
 		{22533931-29B7-4370-ABE0-AA1156B1B2DA} = {9DB1026A-70BF-44F7-BE45-CFB2180F6A29}
 		{2C0BB9C7-59A9-473F-886B-1D812EE2C394} = {9DB1026A-70BF-44F7-BE45-CFB2180F6A29}
 		{8A1D15DB-7C09-4C3F-B5E7-B3BBAF51B52F} = {D56B0D4E-C8C9-491A-BC92-2BD40187416C}
+		{6E8FB801-9B4A-4795-9867-E76F13F04B79} = {D56B0D4E-C8C9-491A-BC92-2BD40187416C}
+		{DD4F11FB-33D9-4E7E-94CE-42064DA67AF8} = {6646115B-E7E0-47E4-99EB-7D9387F03C62}
+		{C2E9A4CC-9258-4C32-95A4-D81ACBDBB135} = {DD4F11FB-33D9-4E7E-94CE-42064DA67AF8}
+		{84D77432-4CE3-4C8C-837A-F612FD1F0E65} = {C2E9A4CC-9258-4C32-95A4-D81ACBDBB135}
+		{3565AA5C-1BE8-4322-808B-F469FA2323FF} = {C2E9A4CC-9258-4C32-95A4-D81ACBDBB135}
+		{3FE95197-4CBE-4F0A-90CC-280EDAB9DECD} = {C2E9A4CC-9258-4C32-95A4-D81ACBDBB135}
+		{EFABA1E7-E254-480C-A0EE-D8BA2CBEB6DF} = {DD4F11FB-33D9-4E7E-94CE-42064DA67AF8}
+		{115DCF87-70E4-4EB5-8403-7C1FA0967B3A} = {EFABA1E7-E254-480C-A0EE-D8BA2CBEB6DF}
+		{DDE5F4EF-3024-49BD-BE86-1CA1EB8FD2C7} = {EFABA1E7-E254-480C-A0EE-D8BA2CBEB6DF}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{71C2B3D1-404F-452B-9912-8692F43E22F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -168,5 +195,29 @@ Global
 		{8A1D15DB-7C09-4C3F-B5E7-B3BBAF51B52F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A1D15DB-7C09-4C3F-B5E7-B3BBAF51B52F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A1D15DB-7C09-4C3F-B5E7-B3BBAF51B52F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E8FB801-9B4A-4795-9867-E76F13F04B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E8FB801-9B4A-4795-9867-E76F13F04B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E8FB801-9B4A-4795-9867-E76F13F04B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E8FB801-9B4A-4795-9867-E76F13F04B79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D77432-4CE3-4C8C-837A-F612FD1F0E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D77432-4CE3-4C8C-837A-F612FD1F0E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D77432-4CE3-4C8C-837A-F612FD1F0E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D77432-4CE3-4C8C-837A-F612FD1F0E65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3565AA5C-1BE8-4322-808B-F469FA2323FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3565AA5C-1BE8-4322-808B-F469FA2323FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3565AA5C-1BE8-4322-808B-F469FA2323FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3565AA5C-1BE8-4322-808B-F469FA2323FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FE95197-4CBE-4F0A-90CC-280EDAB9DECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE95197-4CBE-4F0A-90CC-280EDAB9DECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE95197-4CBE-4F0A-90CC-280EDAB9DECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE95197-4CBE-4F0A-90CC-280EDAB9DECD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{115DCF87-70E4-4EB5-8403-7C1FA0967B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{115DCF87-70E4-4EB5-8403-7C1FA0967B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{115DCF87-70E4-4EB5-8403-7C1FA0967B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{115DCF87-70E4-4EB5-8403-7C1FA0967B3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDE5F4EF-3024-49BD-BE86-1CA1EB8FD2C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE5F4EF-3024-49BD-BE86-1CA1EB8FD2C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE5F4EF-3024-49BD-BE86-1CA1EB8FD2C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE5F4EF-3024-49BD-BE86-1CA1EB8FD2C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
