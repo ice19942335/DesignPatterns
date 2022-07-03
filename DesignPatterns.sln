@@ -74,7 +74,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonInDependencyInject
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monostate", "src\CreationalPatterns\SingletonePattern\Monostate\Monostate.csproj", "{ACBE60EE-DE0E-4B94-AB82-58FBDCFF7E9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Per-Thread Singleton", "src\CreationalPatterns\SingletonePattern\Per-Thread Singleton\Per-Thread Singleton.csproj", "{5D447035-8363-44B2-84B0-60CD452B7ECB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerThreadSingleton", "src\CreationalPatterns\SingletonePattern\PerThreadSingleton\PerThreadSingleton.csproj", "{5D447035-8363-44B2-84B0-60CD452B7ECB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,6 @@
-﻿public sealed class PerThreadSingleton
+﻿namespace PerThreadSingleton;
+
+public sealed class PerThreadSingleton
 {
     private static ThreadLocal<PerThreadSingleton> _threadInstance =
         new ThreadLocal<PerThreadSingleton>(() => new PerThreadSingleton());
