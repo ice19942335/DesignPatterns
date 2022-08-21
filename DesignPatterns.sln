@@ -88,6 +88,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterCaching", "src\Struc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericValueAdapter", "src\StructuralPatterns\GenericValueAdapter\GenericValueAdapter.csproj", "{3D81AD1C-8229-4E8C-B0E0-4BAA89A32EF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterInDependencyInjection", "src\StructuralPatterns\AdapterInDependencyInjection\AdapterInDependencyInjection.csproj", "{B9386769-6BCF-4735-8EDC-B9B60C8CD685}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -137,6 +139,7 @@ Global
 		{DEEFC680-98E8-4787-A87B-E769B3C1425B} = {F2F48FFC-221B-4A81-ACB2-3BC26D16DEA6}
 		{B00BF46D-E769-4B75-9CCB-6A57B3EC69F9} = {F2F48FFC-221B-4A81-ACB2-3BC26D16DEA6}
 		{3D81AD1C-8229-4E8C-B0E0-4BAA89A32EF8} = {F2F48FFC-221B-4A81-ACB2-3BC26D16DEA6}
+		{B9386769-6BCF-4735-8EDC-B9B60C8CD685} = {F2F48FFC-221B-4A81-ACB2-3BC26D16DEA6}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{71C2B3D1-404F-452B-9912-8692F43E22F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -267,5 +270,9 @@ Global
 		{3D81AD1C-8229-4E8C-B0E0-4BAA89A32EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D81AD1C-8229-4E8C-B0E0-4BAA89A32EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D81AD1C-8229-4E8C-B0E0-4BAA89A32EF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9386769-6BCF-4735-8EDC-B9B60C8CD685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9386769-6BCF-4735-8EDC-B9B60C8CD685}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9386769-6BCF-4735-8EDC-B9B60C8CD685}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9386769-6BCF-4735-8EDC-B9B60C8CD685}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
