@@ -1,5 +1,4 @@
-﻿
-using Autofac;
+﻿using Autofac;
 
 public interface IRenderer
 {
