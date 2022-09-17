@@ -100,6 +100,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_1", "src\Structura
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactoryExercise_OS_SelfMadeExample", "src\CreationalPatterns\FactoryPattern\AbstractFactoryExercise_OS_SelfMadeExample\AbstractFactoryExercise_OS_SelfMadeExample.csproj", "{B886834E-92B2-4AF3-950E-AC5E45C4EA59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactoryExercise_OS_SelfMadeExample_Inverted", "src\CreationalPatterns\FactoryPattern\AbstractFactoryExercise_OS_SelfMadeExample_Inverted\AbstractFactoryExercise_OS_SelfMadeExample_Inverted.csproj", "{558B58BD-31DC-4D0D-9772-F6A4500B5F76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -155,6 +157,7 @@ Global
 		{0174715D-F85C-447A-B6E4-2A15E9498A8C} = {D4D2C5E1-99EA-496E-8C59-12B49232A347}
 		{B3E022EA-DCA1-4486-BBEE-D9B63885DD03} = {D4D2C5E1-99EA-496E-8C59-12B49232A347}
 		{B886834E-92B2-4AF3-950E-AC5E45C4EA59} = {BF261BA0-EB94-4E30-8343-69AEB282F36D}
+		{558B58BD-31DC-4D0D-9772-F6A4500B5F76} = {BF261BA0-EB94-4E30-8343-69AEB282F36D}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{71C2B3D1-404F-452B-9912-8692F43E22F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -305,5 +308,9 @@ Global
 		{B886834E-92B2-4AF3-950E-AC5E45C4EA59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B886834E-92B2-4AF3-950E-AC5E45C4EA59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B886834E-92B2-4AF3-950E-AC5E45C4EA59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{558B58BD-31DC-4D0D-9772-F6A4500B5F76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{558B58BD-31DC-4D0D-9772-F6A4500B5F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{558B58BD-31DC-4D0D-9772-F6A4500B5F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{558B58BD-31DC-4D0D-9772-F6A4500B5F76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
