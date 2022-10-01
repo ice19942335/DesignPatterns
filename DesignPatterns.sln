@@ -118,6 +118,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern_MultipleIn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern_Adapter", "src\BehavioralPatterns\DecoratorPattern\DecoratorPattern_Adapter\DecoratorPattern_Adapter.csproj", "{45C1F2CE-BCF2-46F7-A1F7-1AACAEDE27AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern_Exercise1", "src\BehavioralPatterns\DecoratorPattern\DecoratorPattern_Exercise1\DecoratorPattern_Exercise1.csproj", "{B8738B8F-083F-409F-9B7D-AAD07C686C79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -182,6 +184,7 @@ Global
 		{3A3C573B-8BE5-4F8D-A79A-9275A3C685DA} = {00C57487-5875-4F1A-8AA4-B0C438F2065E}
 		{F4D2D67F-73F9-4069-9782-6A24E8D88C10} = {00C57487-5875-4F1A-8AA4-B0C438F2065E}
 		{45C1F2CE-BCF2-46F7-A1F7-1AACAEDE27AE} = {00C57487-5875-4F1A-8AA4-B0C438F2065E}
+		{B8738B8F-083F-409F-9B7D-AAD07C686C79} = {00C57487-5875-4F1A-8AA4-B0C438F2065E}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{71C2B3D1-404F-452B-9912-8692F43E22F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -360,5 +363,9 @@ Global
 		{45C1F2CE-BCF2-46F7-A1F7-1AACAEDE27AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45C1F2CE-BCF2-46F7-A1F7-1AACAEDE27AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45C1F2CE-BCF2-46F7-A1F7-1AACAEDE27AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8738B8F-083F-409F-9B7D-AAD07C686C79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8738B8F-083F-409F-9B7D-AAD07C686C79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8738B8F-083F-409F-9B7D-AAD07C686C79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8738B8F-083F-409F-9B7D-AAD07C686C79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
