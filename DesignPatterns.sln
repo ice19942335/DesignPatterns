@@ -120,6 +120,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern_Adapter", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern_Exercise1", "src\BehavioralPatterns\DecoratorPattern\DecoratorPattern_Exercise1\DecoratorPattern_Exercise1.csproj", "{B8738B8F-083F-409F-9B7D-AAD07C686C79}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FacadePattern", "FacadePattern", "{F7634D46-6C78-46ED-A12D-2898D6E798FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadePattern_Exercise1", "src\StructuralPatterns\FacadePattern\FacadePattern_Exercise1\FacadePattern_Exercise1.csproj", "{2A8AF477-243C-4A0F-BDDE-9E254FEC5A52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -185,6 +189,8 @@ Global
 		{F4D2D67F-73F9-4069-9782-6A24E8D88C10} = {00C57487-5875-4F1A-8AA4-B0C438F2065E}
 		{45C1F2CE-BCF2-46F7-A1F7-1AACAEDE27AE} = {00C57487-5875-4F1A-8AA4-B0C438F2065E}
 		{B8738B8F-083F-409F-9B7D-AAD07C686C79} = {00C57487-5875-4F1A-8AA4-B0C438F2065E}
+		{F7634D46-6C78-46ED-A12D-2898D6E798FA} = {05F4C26B-8681-48DB-9C00-270212884FA2}
+		{2A8AF477-243C-4A0F-BDDE-9E254FEC5A52} = {F7634D46-6C78-46ED-A12D-2898D6E798FA}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{71C2B3D1-404F-452B-9912-8692F43E22F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -367,5 +373,9 @@ Global
 		{B8738B8F-083F-409F-9B7D-AAD07C686C79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8738B8F-083F-409F-9B7D-AAD07C686C79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8738B8F-083F-409F-9B7D-AAD07C686C79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A8AF477-243C-4A0F-BDDE-9E254FEC5A52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A8AF477-243C-4A0F-BDDE-9E254FEC5A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A8AF477-243C-4A0F-BDDE-9E254FEC5A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A8AF477-243C-4A0F-BDDE-9E254FEC5A52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
