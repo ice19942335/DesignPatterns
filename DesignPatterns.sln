@@ -130,6 +130,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyPattern_DefendingProxy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyPattern_VirtualProxy", "src\StructuralPatterns\ProxyPattern\ProxyPattern_VirtualProxy\ProxyPattern_VirtualProxy.csproj", "{98AC7D1D-5F62-4791-BE9A-7062A0B02B27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyPatternt_PropertyAccess", "src\StructuralPatterns\ProxyPattern\ProxyPatternt_PropertyAccess\ProxyPatternt_PropertyAccess.csproj", "{D986FCDE-8649-44C3-AE9C-DBAB42075794}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -200,6 +202,7 @@ Global
 		{2779A409-DB33-487F-8D24-12072C2574E2} = {05F4C26B-8681-48DB-9C00-270212884FA2}
 		{0B865528-2410-4B7F-BD53-FC3408FBE512} = {2779A409-DB33-487F-8D24-12072C2574E2}
 		{98AC7D1D-5F62-4791-BE9A-7062A0B02B27} = {2779A409-DB33-487F-8D24-12072C2574E2}
+		{D986FCDE-8649-44C3-AE9C-DBAB42075794} = {2779A409-DB33-487F-8D24-12072C2574E2}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{71C2B3D1-404F-452B-9912-8692F43E22F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -394,5 +397,9 @@ Global
 		{98AC7D1D-5F62-4791-BE9A-7062A0B02B27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98AC7D1D-5F62-4791-BE9A-7062A0B02B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98AC7D1D-5F62-4791-BE9A-7062A0B02B27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D986FCDE-8649-44C3-AE9C-DBAB42075794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D986FCDE-8649-44C3-AE9C-DBAB42075794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D986FCDE-8649-44C3-AE9C-DBAB42075794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D986FCDE-8649-44C3-AE9C-DBAB42075794}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
